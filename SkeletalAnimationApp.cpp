@@ -128,11 +128,11 @@ bool SkeletalAnimationApp::onCreate(int argc, char** argv)
 	/*Extra models*/
 	//ModelLoader& modelLoader, const Vec3& color, const std::string& modelPath, std::shared_ptr<Shader> animationShader,
 	//std::shared_ptr<Shader> animDepthShader
-	std::string mothPath = "Models/Shiwanna/scale.fbx";
+	std::string mothPath = "Models/Frost Ace/scale.fbx";
 	ModelLoader mothmanLoad = ModelLoader(mothPath);
 	mothman = std::make_unique<Model>(mothmanLoad, Vec3(1), mothPath, animationShader, animDepthMapShader);
 
-	std::string alicePath = "Models/Buraq/scale.fbx";
+	std::string alicePath = "Models/Mothman/scale.fbx";
 	ModelLoader aliceLoad = ModelLoader(alicePath);
 	alice = std::make_unique<Model>(aliceLoad, Vec3(1), alicePath, animationShader, animDepthMapShader);
 
